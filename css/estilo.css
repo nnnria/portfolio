@@ -1,0 +1,96 @@
+*{
+    border: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    font-family: 'Space Mono', monospace;
+}
+.navegador{
+    border:1px solid red;
+    background-color: black;
+    color: white;
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 5rem;
+    z-index: 5;
+}
+.nombre{
+    font-family: 'Lucida Sans';
+    margin-left: -100px;
+    color: white;
+}
+.navegador>ul{
+    display: flex;
+    gap: 50px;
+    list-style-type: none;
+    
+}
+.linknav{
+    padding: 15px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: ghostwhite;
+}
+/*ICONOS PA CUANDO PASES EL RATON*/
+.linknav>.iconohover{ 
+    display: none;  
+    filter: brightness(100);
+} 
+.linknav:hover{
+    background-color: rgb(141, 17, 194);
+    color: white;
+    
+}
+.navegador2{
+    top: 35%; 
+    left: 0;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    z-index: 5;
+    
+}
+#home{
+    border:1px solid red;
+    height: 100vh;
+    background-image:  linear-gradient(rgba(255, 198, 250, 0.2), rgba(255, 192, 241, 0.2)),url("https://images.pexels.com/photos/2832432/pexels-photo-2832432.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.homecontent>img{
+    width: 300px;
+    border-radius: 300px;
+}
+.homecontent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+    gap: 20px;
+}
+#portfolio{
+    border:1px solid red;
+    height: 100vh;
+        background-image: url("images/fondo1.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+}
+#sobremi{
+    border:1px solid red;
+    height: 100vh;
+}
+#contactos{
+    border:1px solid red;
+    height: 100vh;
+}
+#testimonios{
+    border:1px solid red;
+    height: 100vh;
+}
